@@ -128,8 +128,16 @@
         <p>To fix the errors:</p>
         <ol style="list-style-type: decimal;">
             <li>Click an error name on the <strong>Problems</strong> list. Preview of the error will be displayed on the right from the list. If you would like to highlight the line in the code editor, right-click on the error and choose <strong>Jump to Source</strong> or click <strong>F4</strong>. Alternatively, you can tick <strong>Navigate with Single Click</strong> (<img src="images/screen10.PNG" alt="navigate with one click">) in the context menu. This way, the code editor will jump to the relevant line every time you click the error, like it is shown on the video below.</li>
+            <video width="640" height="480" controls>
+            <source src="videos/video1.mp4" type="video/mp4">       
+            Your browser does not support the video tag.
+            </video>
             <li>Click <strong>Apply a quickfix</strong> (<img src="images/screen11.PNG" alt="quickfix"> or <strong>Alt+Enter</strong>) to see if there are any suggestions available.</li>
             <li>If the quickfix didn&rsquo;t help, highlight the line in the code editor and follow the tips suggested in the editor and scrollbar stripes, like it is shown on the video below.</li>
+            <video width="640" height="480" controls>
+            <source src="videos/video2.mp4" type="video/mp4">       
+            Your browser does not support the video tag.
+            </video>
         </ol>
         <p>If there were no automatically proposed solutions, analyze all hints. There&rsquo;s a high chance they will give you an idea on how to resolve a problem.</p>
         <p>As you could see on the video above, we resolved three issues thanks to the IntelliJ IDEA clues. In particular, we:</p>
@@ -166,6 +174,10 @@
     <li>Do it with the same settings by clicking <strong>Rerun Inspection</strong> in the context menu (<img src="images/screen12.PNG" alt="rerun inspection"> or <strong>Ctrl+F5</strong>).</li>
     <li>Change the inspection profile by clicking <strong>Settings</strong> in the context menu (<img src="images/screen13.PNG" alt="settings">) and setting up a scope in the <strong>Inspection</strong> window.</li>
     <li>Rerun a particular test group (syntax errors, for example) by right-clicking anywhere inside the group in the <strong>Problems</strong> list, selecting <strong>Run inspections on&hellip;</strong>, specifying a scope and clicking <strong>Analyze</strong>. The video below shows this process.</li>
+    <video width="640" height="480" controls>
+    <source src="videos/video3.mp4" type="video/mp4">       
+     Your browser does not support the video tag.
+     </video>
 </ul>
 <p>If you reinspect our code with the same settings, you will see there is one error left. Specifically, the line 13 has the issue.</p>
             <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Hello, &quot;</span> <span style="color: #333333">+</span> name <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; from &quot;</span> <span style="color: #333333">+</span> country <span style="color: #333333">+</span> <span style="color: #333333">!);</span>
