@@ -1,7 +1,9 @@
  body {
-    font-size: 11px;
+    font-size: 15px;
+    line-height:107%;
     font-family:"Segoe UI", sans-serif;
     color:#19191C;
+    background:white;
     }
   
   #header {
