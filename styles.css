@@ -4,7 +4,11 @@
     color:#19191C;
     background:white;
     }
-  
+
+  #warning {
+   background: #DBF1DF;
+   }
+
   #header {
     background: #303033;
     padding: 20px;
