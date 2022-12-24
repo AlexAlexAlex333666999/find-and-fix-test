@@ -31,3 +31,8 @@
     padding: 20px;
     }
   
+  #header_text {
+    color: white;
+    font-size: 13px; 
+    font: "Segoe UI";
+   }
