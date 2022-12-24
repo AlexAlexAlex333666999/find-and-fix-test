@@ -1,9 +1,12 @@
  body {
-    font-size: 15px;
     font-family:"Segoe UI", sans-serif;
     color:#19191C;
     background:white;
     }
+
+  p {
+   font-size: 14px; 
+   }
 
   #warning {
    background: #DBF1DF;
