@@ -63,3 +63,11 @@
     border-color: grey;
     padding: 15px;
    }
+
+   ul {
+    line-height: 130%;
+   }
+
+   ol {
+    line-height: 130%;
+   }
