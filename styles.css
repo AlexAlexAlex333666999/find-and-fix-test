@@ -4,28 +4,31 @@
     }
   
   #header {
-    background: #DBF1DF;
+    background: #303033;
     padding: 20px;
     }
   
   #left_sidebar {
     float: left;
-    width: 30%;
+    width: 20%;
+    border-right: 2px solid #D1D1D2;
     }
 
   #right_sidebar {
     float: right;
-    width: 30%;
+    width: 20%;
+    text-align: right;
+    border-left: 2px solid #D1D1D2;
     }
   
   #content {
-    margin-right: 34%;
-    margin-left: 34%;
+    margin-right: 24%;
+    margin-left: 24%;
     }
   
   #footer {
     clear: right;
-    background: #DBF1DF;
+    background: #303033;
     padding: 20px;
     }
   
