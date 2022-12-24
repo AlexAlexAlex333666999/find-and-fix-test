@@ -8,8 +8,8 @@
    font-size: 14px; 
    }
 
-  .warning {
-   background: #DBF1DF;
+  #warning {
+   background-color: #DBF1DF;
    }
 
   #header {
@@ -42,7 +42,7 @@
     padding: 20px;
     }
   
-  .header_text {
+  #header_text {
     color: white;
     font-size: 16px; 
     font-family:"Segoe UI",sans-serif;
