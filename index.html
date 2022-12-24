@@ -42,7 +42,6 @@
 <h2>Code example</h2>
 <p>As an example, let’s take a small program that asks users for a name and country and then greets them.</p>
 <p><span "id="warning">We intentionally put several errors into the code.</span></p>
-<br>
 <!-- First code example -->
 <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">java.util.Scanner</span><span style="color: #333333">;</span>
 <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">Main</span> <span style="color: #333333">{</span>
@@ -121,7 +120,6 @@
             <li>Closed lines 7 and 10 with semicolons.</li>
         </ul>
         <p>As a result of the edits, our code looks like this:</p>
-        <br>
         <!-- Second code example -->
 <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">java.util.Scanner</span><span style="color: #333333">;</span>
 
@@ -141,6 +139,7 @@
 </pre></div>
    
         <!-- End of second code example -->
+    </div>
         <br>
         <div id="instruction">
             <h2>Rerun the inspection and run the program</h2>
@@ -151,17 +150,13 @@
     <li>Rerun a particular test group (syntax errors, for example) by right-clicking anywhere inside the group in the <strong>Problems</strong> list, selecting <strong>Run inspections on&hellip;</strong>, specifying a scope and clicking <strong>Analyze</strong>. The video below shows this process.</li>
 </ul>
 <p>If you reinspect our code with the same settings, you will see there is one error left. Specifically, the line 13 has the issue.</p>
-            <br>
             <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Hello, &quot;</span> <span style="color: #333333">+</span> name <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; from &quot;</span> <span style="color: #333333">+</span> country <span style="color: #333333">+</span> <span style="color: #333333">!);</span>
 </pre></div>
 <br>
 <p>As you can see, we have not closed the exclamation mark (!) with quotation marks (&ldquo;&rdquo;). The edited line will look like this:</p>
-            <br>
             <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Hello, &quot;</span> <span style="color: #333333">+</span> name <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; from &quot;</span> <span style="color: #333333">+</span> country <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;!&quot;</span><span style="color: #333333">);</span>
 </pre></div>
-<br>
 <p>If you change the line 13 to the one above and rerun the inspection, you will see the <strong>Code inspection did not find anything to report</strong> message at the right bottom of a screen. As a result, the program will run smoothly with the output like this:</p>
-             <br>
             <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
             <p>What&apos;s your name?</p>
 <p><em><span style="color:#548235;">Frodo</span></em></p>
@@ -171,7 +166,7 @@
             </div>
         </div>
         <br>
-        <h2>Video tutorial</>
+        <h2>Video tutorial</h2>
             <p>You can watch a video tutorial about the code inspection with the same steps below.</p>
     <h2>Did Inspect Code find every error?</h2>
     <p>Unfortunately, we can’t guarantee the code inspection finds all errors. Clean code from the inspection standpoint doesn’t mean the program is error-free. For example, even our simple program passed the last code inspection, but still has some flaws. For instance, it doesn’t capitalize neither name nor country, it doesn’t ask a user to enter their details again in case of zero input, and so on.</p> 
@@ -181,7 +176,7 @@
     <ul style="list-style-type: disc;">
     <li><a href="https://www.jetbrains.com/help/idea/tests-in-ide.html">Testing</a>.</li>
     <li><u><a href="https://www.jetbrains.com/help/idea/debugging-code.html">Debugging</a></u>.</li>
-    <li>More details about the<a href="https://www.jetbrains.com/help/idea/code-inspection.html">code inspection</a>.</li>
+    <li>More details about the <a href="https://www.jetbrains.com/help/idea/code-inspection.html">code inspection</a>.</li>
     </ul>
 </div>
 <div id="footer">
