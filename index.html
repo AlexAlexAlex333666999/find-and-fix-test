@@ -96,9 +96,49 @@
         <p>You can also group the list by severity (screen7) and/or directory (screen8).</p>
         <p>Plus, you are able to export the list by clicking <strong>Export</strong> (screen9) and choosing a format among HTML, XML, and Sarif (JSON).</p>     
     </div>
-    
-    
-    
+    <div id="instruction">
+        <h2>Ignore the errors</h2>
+        <p>You are also able to remove errors from the report. There are various ways to do that. In particular, you can:</p>
+        <ul style="list-style-type: disc;">
+        <li>Exclude an error by clicking its name and <strong>Delete</strong> on a keyboard. Alternatively, you can right-click the error and select <strong>Exclude</strong>. The error will be removed from the list but will reappear on the next report.</li>
+        <li>Suppress an error by clicking its name and selecting <strong>Suppress for class</strong>, <strong>Suppress for method</strong>, or <strong>Suppress all inspections for class</strong>. The <strong>@SuppressWarnings(&ldquo;Check group&rdquo;)</strong> line will be added to the code, the error will be deleted from the list and will not appear on the next report until you remove the suppress warning from your code.</li>
+        </ul>
+    </div>
+    <div id="instruction">
+        <h2>Fix the errors</h2>
+        <p>To fix the errors:</p>
+        <ol style="list-style-type: decimal;">
+            <li>Click an error name on the <strong>Problems</strong> list. Preview of the error will be displayed on the right from the list. If you would like to highlight the line in the code editor, right-click on the error and choose <strong>Jump to Source</strong> or click <strong>F4</strong>. Alternatively, you can tick <strong>Navigate with Single Click</strong> in the context menu. This way, the code editor will jump to the relevant line every time you click the error, like it is shown on the video below.</li>
+            <li>Click <strong>Apply a quickfix</strong> ( or <strong>Alt+Enter</strong>) to see if there are any suggestions available.</li>
+            <li>If the quickfix didn&rsquo;t help, highlight the line in the code editor and follow the tips suggested in the editor and scrollbar stripes, like it is shown on the video below.</li>
+        </ol>
+        <p>If there were no automatically proposed solutions, analyze all hints. There&rsquo;s a high chance they will give you an idea on how to resolve a problem.</p>
+        <p>As you could see on the video above, we resolved three issues thanks to the IntelliJ IDEA clues. In particular, we:</p>
+        <ul style="list-style-type: disc">
+            <li>Declared a variable <strong>country</strong> as a string on the line 11.</li>
+            <li>Closed lines 7 and 10 with semicolons.</li>
+        </ul>
+        <p>As a result of the edits, our code looks like this:</p>
+        <!-- Second code example -->
+        <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">java.util.Scanner</span><span style="color: #333333">;</span>
+        <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">Main</span> <span style="color: #333333">{</span>
+        <span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">static</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">main</span><span style="color: #333333">(</span>String<span style="color: #333333">[]</span> args<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+        Scanner myObj <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> Scanner<span style="color: #333333">(</span>System<span style="color: #333333">.</span><span style="color: #0000CC">in</span><span style="color: #333333">);</span>
+
+        System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;What&#39;s your name?&quot;</span><span style="color: #333333">);</span>
+        String name <span style="color: #333333">=</span> myObj<span style="color: #333333">.</span><span style="color: #0000CC">nextLine</span><span style="color: #333333">();</span>
+
+        System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Where are you from?&quot;</span><span style="color: #333333">);</span>
+        String country <span style="color: #333333">=</span> myObj<span style="color: #333333">.</span><span style="color: #0000CC">nextLine</span><span style="color: #333333">();</span>
+
+        System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Hello, &quot;</span> <span style="color: #333333">+</span> name <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; from &quot;</span> <span style="color: #333333">+</span> country <span style="color: #333333">+</span> <span style="color: #333333">!);</span>
+        <span style="color: #333333">}</span>
+        <span style="color: #333333">}</span>
+        </pre></div>       
+        <!-- End of second code example -->
+        
+        
+    </div>
 </div>
 <div id="footer">
 <strong>FOOTER</strong>
