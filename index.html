@@ -66,6 +66,36 @@
     <p>If you open the code in IntelliJ IDEA, you will see clues telling you about the errors: the code editor will contain a few red lines, the <strong>country</strong> variable will be marked as red, the scrollbar will display red stripes.</p>
     <p>For the small program like ours, these hints would probably be enough. However, if you are working with a piece of code that takes hundreds of lines, you might want to inspect the whole piece with one click and see a list of errors. Maybe you would like to export the list as well. That’s when the <strong>Inspect Code</strong> feature comes into the play.</p>
     </div>
+ <br>   
+    <div id="instruction">
+        <h2>Specify the inspection scope</h2>
+        <p>In this dialog:</p>
+        <ol style="list-style-type: decimal;">
+        <li>Specify the integration scope by choosing between:<ul style="list-style-type: disc;">
+            <li><strong>Whole project:&nbsp;</strong>inspection of a whole project.</li>
+            <li><strong>File &lsquo;file path&rsquo;:</strong> inspection of the opened file only (chosen by default).</li>
+            <li><strong>Custom scope:&nbsp;</strong>a scope that you can either choose from a list or create a new one by clicking <strong>Shift+Enter</strong> and operating with the <strong>Scopes</strong> window.</li>
+        </ul>
+    <p>You can also tick <strong>Inspect injected code</strong>.</p>
+        </li>
+            <li>Specify the inspection profile. You can either:<ul style="list-style-type: disc;">
+            <li>Choose it from the list.</li>
+            <li>Click <strong>Configure</strong> and set up the checks that you would like to perform in the&nbsp;<strong>Inspection</strong> window. The window allows you not only include and exclude tests but also assign it to a scope and set up both severity and highlighting style.<br>&nbsp;</li>
+        </ul>
+    </li>
+    <li>If needed, click the question icon. It opens the <span style="color:black;"><a href="https://www.jetbrains.com/help/idea/2022.3/specify-inspection-scope-dialog.html"><span style="color:black;">Specify Inspection Scope dialog</span></a></span> page in our help center.</li>
+            <li>Click <strong>Analyze</strong>. Messages in the status bar mean the inspection is running. If there are no errors, the <strong>Code inspection did not find anything to report</strong> message will be displayed at the right bottom of the screen. In our case, the <strong>Problems</strong> window with a list of errors will be opened.</li>
+</ol>  
+    </div>
+    <br>
+    <div id="instruction">
+        <h2>View and export the inspection results</h2>
+        <p>If you inspect our code example, you will see six errors: three for both <strong>Java annotator</strong> and <strong>Syntax error</strong> groups.</p>
+        <p>On the left from the error list, you can see a context menu.</p>
+        <p>There, you are able to expand the list of errors by either clicking each group one by one or clicking <strong>Expand All</strong> (screen6 or <strong>Ctrl+NumPad+</strong>).</p>
+        <p>You can also group the list by severity (screen7) and/or directory (screen8).</p>
+        <p>Plus, you are able to export the list by clicking <strong>Export</strong> (screen9) and choosing a format among HTML, XML, and Sarif (JSON).</p>     
+    </div>
     
     
     
