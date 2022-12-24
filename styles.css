@@ -1,6 +1,7 @@
  body {
-    font-family: verdana, sans-serif;
-    font-size: 12px;
+    font-size: 11px;
+    font-family:"Segoe UI", sans-serif;
+    color:#19191C;
     }
   
   #header {
@@ -34,5 +35,5 @@
   #header_text {
     color: white;
     font-size: 13px; 
-    font: "Segoe UI";
+    font-family:"Segoe UI",sans-serif;
    }
