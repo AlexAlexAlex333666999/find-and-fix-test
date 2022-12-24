@@ -48,7 +48,7 @@
 <p>In our case, an error is any difference between an expected and actual behavior of your code. The expected behavior may come from requirements to the program, industry standards, or your own perception.</p>
 <h2 id="code_example">Code example</h2>
 <p>As an example, let’s take a small program that asks users for a name and country and then greets them.</p>
-<p><span "id="warning">We intentionally put several errors into the code.</span></p>
+<p"id="warning">We intentionally put several errors into the code.</p>
 <!-- First code example -->
 <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">java.util.Scanner</span><span style="color: #333333">;</span>
 <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">Main</span> <span style="color: #333333">{</span>
@@ -98,7 +98,7 @@
             <li>Click <strong>Configure</strong> and set up the checks that you would like to perform in the&nbsp;<strong>Inspection</strong> window. The window allows you not only include and exclude tests but also assign it to a scope and set up both severity and highlighting style.</li>
         </ul>
     </li>
-    <li>If needed, click the question icon. It opens the <span style="color:black;"><a href="https://www.jetbrains.com/help/idea/2022.3/specify-inspection-scope-dialog.html" target="_blank"><span style="color:black;">Specify Inspection Scope dialog</span></a></span> page in our help center.</li>
+    <li>If needed, click the question icon (<img src="images/screen4.png" alt="question icon">). It opens the <span style="color:black;"><a href="https://www.jetbrains.com/help/idea/2022.3/specify-inspection-scope-dialog.html" target="_blank"><span style="color:black;">Specify Inspection Scope dialog</span></a></span> page in our help center.</li>
             <li>Click <strong>Analyze</strong>. Messages in the status bar mean the inspection is running. If there are no errors, the <strong>Code inspection did not find anything to report</strong> message will be displayed at the right bottom of the screen. In our case, the <strong>Problems</strong> window with a list of errors will be opened.</li>
 </ol>  
     </div>
@@ -106,10 +106,12 @@
     <div id="instruction">
         <h2 id="view">View and export the inspection results</h2>
         <p>If you inspect our code example, you will see six errors: three for both <strong>Java annotator</strong> and <strong>Syntax error</strong> groups.</p>
+        <img src="images/screen5.png" alt="errors after the inspection" style="text-align: center;">
         <p>On the left from the error list, you can see a context menu.</p>
-        <p>There, you are able to expand the list of errors by either clicking each group one by one or clicking <strong>Expand All</strong> (screen6 or <strong>Ctrl+NumPad+</strong>).</p>
-        <p>You can also group the list by severity (screen7) and/or directory (screen8).</p>
-        <p>Plus, you are able to export the list by clicking <strong>Export</strong> (screen9) and choosing a format among HTML, XML, and Sarif (JSON).</p>     
+        <img src="images/ScreenContext.png" alt="context menu" style="text-align: center;">
+        <p>There, you are able to expand the list of errors by either clicking each group one by one or clicking <strong>Expand All</strong> (<img src="images/screen6.png" alt="expand all"> or <strong>Ctrl+NumPad+</strong>).</p>
+        <p>You can also group the list by severity (<img src="images/screen7.png" alt="severity">) and/or directory (<img src="images/screen8.png" alt="directory">).</p>
+        <p>Plus, you are able to export the list by clicking <strong>Export</strong> (<img src="images/screen9.png" alt="export">) and choosing a format among HTML, XML, and Sarif (JSON).</p>     
     </div>
     <br>
     <div id="instruction">
@@ -125,8 +127,8 @@
         <h2 id="fix">Fix the errors</h2>
         <p>To fix the errors:</p>
         <ol style="list-style-type: decimal;">
-            <li>Click an error name on the <strong>Problems</strong> list. Preview of the error will be displayed on the right from the list. If you would like to highlight the line in the code editor, right-click on the error and choose <strong>Jump to Source</strong> or click <strong>F4</strong>. Alternatively, you can tick <strong>Navigate with Single Click</strong> in the context menu. This way, the code editor will jump to the relevant line every time you click the error, like it is shown on the video below.</li>
-            <li>Click <strong>Apply a quickfix</strong> ( or <strong>Alt+Enter</strong>) to see if there are any suggestions available.</li>
+            <li>Click an error name on the <strong>Problems</strong> list. Preview of the error will be displayed on the right from the list. If you would like to highlight the line in the code editor, right-click on the error and choose <strong>Jump to Source</strong> or click <strong>F4</strong>. Alternatively, you can tick <strong>Navigate with Single Click</strong> (<img src="images/screen10.png" alt="navigate with one click">) in the context menu. This way, the code editor will jump to the relevant line every time you click the error, like it is shown on the video below.</li>
+            <li>Click <strong>Apply a quickfix</strong> (<img src="images/screen11.png" alt="quickfix"> or <strong>Alt+Enter</strong>) to see if there are any suggestions available.</li>
             <li>If the quickfix didn&rsquo;t help, highlight the line in the code editor and follow the tips suggested in the editor and scrollbar stripes, like it is shown on the video below.</li>
         </ol>
         <p>If there were no automatically proposed solutions, analyze all hints. There&rsquo;s a high chance they will give you an idea on how to resolve a problem.</p>
@@ -161,8 +163,8 @@
             <h2 id="rerun">Rerun the inspection and run the program</h2>
             <p>After the edits, some errors in the list will be marked as <strong>No longer valid</strong>. Still, we cannot be sure that our program runs smoothly. To check the errors before running the program, rerun the inspections. There are three ways to do that. You can:</p>
 <ul style="list-style-type: disc;">
-    <li>Do it with the same settings by clicking <strong>Rerun Inspection</strong> in the context menu (screen12 or <strong>Ctrl+F5</strong>).</li>
-    <li>Change the inspection profile by clicking <strong>Settings</strong> in the context menu (screen13) and setting up a scope in the <strong>Inspection</strong> window.</li>
+    <li>Do it with the same settings by clicking <strong>Rerun Inspection</strong> in the context menu (<img src="images/screen12.png" alt="rerun inspection"> or <strong>Ctrl+F5</strong>).</li>
+    <li>Change the inspection profile by clicking <strong>Settings</strong> in the context menu (<img src="images/screen13.png" alt="settings">) and setting up a scope in the <strong>Inspection</strong> window.</li>
     <li>Rerun a particular test group (syntax errors, for example) by right-clicking anywhere inside the group in the <strong>Problems</strong> list, selecting <strong>Run inspections on&hellip;</strong>, specifying a scope and clicking <strong>Analyze</strong>. The video below shows this process.</li>
 </ul>
 <p>If you reinspect our code with the same settings, you will see there is one error left. Specifically, the line 13 has the issue.</p>
