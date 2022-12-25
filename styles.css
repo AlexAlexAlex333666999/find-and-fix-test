@@ -1,92 +1,92 @@
- body {
-    font-family:"Segoe UI", sans-serif;
-    color:#19191C;
-    background:white;
-    margin: 0;
-    }
+body {
+  font-family:"Segoe UI", sans-serif;
+  color:#19191C;
+  background:white;
+  margin: 0;
+}
 
-  p {
-   font-size: 15px;
-   line-height: 150%;
-   }
+p {
+  font-size: 15px;
+  line-height: 150%;
+}
 
-  #warning {
-   background-color: #DBF1DF;
-   }
+#warning {
+  background-color: #DBF1DF;
+}
 
-  #header {
-    background: #303033;
-    padding: 20px;
-    }
-  
-  #left_sidebar {
-    float: left;
-    width: 15%;
-    border-right: 2px solid #D1D1D2;
-    color: black;
-    text-decoration-line: underline;
-    text-decoration-color: black;  
-    }
+#header {
+  background: #303033;
+  padding: 20px;
+}
 
-  #right_sidebar {
-    float: right;
-    width: 20%;
-    border-left: 2px solid #D1D1D2;
-    color: black;
-    }
-  
-  #content {
-    margin-right: 30%;
-    margin-left: 25%;
-    }
-  
-  #footer {
-    clear: right;
-    background: #303033;
-    padding: 20px;
-    }
-  
-  #header_text {
-    color: white;
-    font-size: 16px; 
-    font-family:"Segoe UI",sans-serif;
-    vertical-align: middle;
-   }
+#left_sidebar {
+  float: left;
+  width: 15%;
+  border-right: 2px solid #D1D1D2;
+  color: black;
+  text-decoration-line: underline;
+  text-decoration-color: black;
+}
 
-   h1 {    
-    font-size: 25px;
-    }
+#right_sidebar {
+  float: right;
+  width: 20%;
+  border-left: 2px solid #D1D1D2;
+  color: black;
+}
 
-   h2 {    
-    font-size: 20px;
-    }
+#content {
+  margin-right: 30%;
+  margin-left: 25%;
+}
 
-   #instruction {
-    border: solid;
-    border-width: .1em .1em .1em .1em;
-    border-color: grey;
-    padding: 15px;
-   }
+#footer {
+  clear: right;
+  background: #303033;
+  padding: 20px;
+}
 
-   ul {
-    line-height: 200%;
-   }
+#header_text {
+  color: white;
+  font-size: 16px;
+  font-family:"Segoe UI",sans-serif;
+  vertical-align: middle;
+}
 
-   ol {
-    line-height: 200%;
-   }
+h1 {
+  font-size: 25px;
+}
 
-  a {
+h2 {
+  font-size: 20px;
+}
+
+#instruction {
+  border: solid;
+  border-width: .1em .1em .1em .1em;
+  border-color: grey;
+  padding: 15px;
+}
+
+ul {
+  line-height: 200%;
+}
+
+ol {
+  line-height: 200%;
+}
+
+a {
   color: #19191C;
-   }
+}
 
-  .central {
-   display: block;
-    margin-left: auto;
-    margin-right: auto;
-   }
+.central {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .right {
-   display: block;
-   margin-left: auto;
-  }
+.right {
+  display: block;
+  margin-left: auto;
+}
