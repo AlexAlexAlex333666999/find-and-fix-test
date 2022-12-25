@@ -1,56 +1,56 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, maximum-scale=1">
-<title>Tutorial: Inspect your Java code to find and fix errors</title>
-<link href="styles.css" rel="stylesheet">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, maximum-scale=1">
+  <title>Tutorial: Inspect your Java code to find and fix errors</title>
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 <div id="header">
-<a href="index.html">
-<img src="images/logo.jpg" alt="IntelliJ IDEA logo" width="48" height="48">
-</a>
-<b id="header_text">IntelliJ IDEA</b>
+  <a href="index.html">
+    <img src="images/logo.jpg" alt="IntelliJ IDEA logo" width="48" height="48">
+  </a>
+  <b id="header_text">IntelliJ IDEA</b>
 </div>
 
 <div id="left_sidebar">
-<ul>
-<li><a href="https://www.jetbrains.com/help/idea/getting-started.html" target="_blank">Getting started</a></li>
-<li><a href="https://www.jetbrains.com/help/idea/configuring-project-and-ide-settings.html" target="_blank">IDE configuration</a></li>
-<li><a href="https://www.jetbrains.com/help/idea/working-with-projects.html" target="_blank">Project Configuration</a></li>
-<li><a href="https://www.jetbrains.com/help/idea/working-with-source-code.html" target="_blank">...</a></li>
-</ul>
+  <ul>
+    <li><a href="https://www.jetbrains.com/help/idea/getting-started.html" target="_blank">Getting started</a></li>
+    <li><a href="https://www.jetbrains.com/help/idea/configuring-project-and-ide-settings.html" target="_blank">IDE configuration</a></li>
+    <li><a href="https://www.jetbrains.com/help/idea/working-with-projects.html" target="_blank">Project Configuration</a></li>
+    <li><a href="https://www.jetbrains.com/help/idea/working-with-source-code.html" target="_blank">...</a></li>
+  </ul>
 </div>
 
 <div id="right_sidebar">
-<ul>
-<li><a href="#what_is_error">What is an error?</a></li>
-<li><a href="#code_example">Code example</a></li>
-<li><a href="#open_code">Open the code in IntelliJ IDEA</a></li>
-<li><a href="#run">Run an inspection</a></li>
-<li><a href="#scope">Specify the inspection scope</a></li>
-<li><a href="#view">View and export the inspection results</a></li>
-<li><a href="#ignore">Ignore the errors</a></li>
-<li><a href="#fix">Fix the errors</a></li>
-<li><a href="#rerun">Rerun the inspection and run the program</a></li>
-<li><a href="#video">Tutorial video</a></li>
-<li><a href="#every_error">Did Inspect Code find every error?</a></li>
-<li><a href="#next">What's next?</a></li>
-</ul>
+  <ul>
+    <li><a href="#what_is_error">What is an error?</a></li>
+    <li><a href="#code_example">Code example</a></li>
+    <li><a href="#open_code">Open the code in IntelliJ IDEA</a></li>
+    <li><a href="#run">Run an inspection</a></li>
+    <li><a href="#scope">Specify the inspection scope</a></li>
+    <li><a href="#view">View and export the inspection results</a></li>
+    <li><a href="#ignore">Ignore the errors</a></li>
+    <li><a href="#fix">Fix the errors</a></li>
+    <li><a href="#rerun">Rerun the inspection and run the program</a></li>
+    <li><a href="#video">Tutorial video</a></li>
+    <li><a href="#every_error">Did Inspect Code find every error?</a></li>
+    <li><a href="#next">What's next?</a></li>
+  </ul>
 </div>
 
 <div id="content">
-<h1>Tutorial: Inspect your Java code to find and fix errors</h1>
-<p>This tutorial describes how to find and fix errors in your Java code with a help of <strong>Inspect Code</strong>. This feature allows you to get a list of errors in your program, export the list, quickly fix the issues, and many more.</p>
-    <p>You can also watch a <a href="#video">tutorial video</a> about the feature at the end of the page.</p>
-<h2 id="what_is_error">What is an error?</h2>
-<p>In our case, an error is any difference between an expected and actual behavior of your code. The expected behavior may come from requirements to the program, industry standards, or your own perception.</p>
-<h2 id="code_example">Code example</h2>
-<p>As an example, let’s take a small program that asks users for a name and country and then greets them.</p>
-<p id="warning">We intentionally put several errors into the code.</p>
-<!-- First code example -->
-<div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">java.util.Scanner</span><span style="color: #333333">;</span>
+  <h1>Tutorial: Inspect your Java code to find and fix errors</h1>
+  <p>This tutorial describes how to find and fix errors in your Java code with a help of <strong>Inspect Code</strong>. This feature allows you to get a list of errors in your program, export the list, quickly fix the issues, and many more.</p>
+  <p>You can also watch a <a href="#video">tutorial video</a> about the feature at the end of the page.</p>
+  <h2 id="what_is_error">What is an error?</h2>
+  <p>In our case, an error is any difference between an expected and actual behavior of your code. The expected behavior may come from requirements to the program, industry standards, or your own perception.</p>
+  <h2 id="code_example">Code example</h2>
+  <p>As an example, let’s take a small program that asks users for a name and country and then greets them.</p>
+  <p id="warning">We intentionally put several errors into the code.</p>
+  <!-- First code example -->
+  <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">java.util.Scanner</span><span style="color: #333333">;</span>
 <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">Main</span> <span style="color: #333333">{</span>
     <span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">static</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">main</span><span style="color: #333333">(</span>String<span style="color: #333333">[]</span> args<span style="color: #333333">)</span> <span style="color: #333333">{</span>
         Scanner myObj <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> Scanner<span style="color: #333333">(</span>System<span style="color: #333333">.</span><span style="color: #0000CC">in</span><span style="color: #333333">);</span>
@@ -65,100 +65,100 @@
     <span style="color: #333333">}</span>
 <span style="color: #333333">}</span>
 </pre></div>
-<!-- End of the first code example -->
-<br>
-    <div id="instruction">
+  <!-- End of the first code example -->
+  <br>
+  <div id="instruction">
     <h2 id="open_code">Open the code in IntelliJ IDEA</h2>
     <p>If you open the code in IntelliJ IDEA, you will see clues telling you about the errors: the code editor will contain a few red lines, the <strong>country</strong> variable will be marked as red, the scrollbar will display red stripes.</p>
     <img src="images/screen1.PNG" alt="error indicators" class="central" width="770px" height="auto">
     <p>For the small program like ours, these hints would probably be enough. However, if you are working with a piece of code that takes hundreds of lines, you might want to inspect the whole piece with one click and see a list of errors. Maybe you would like to export the list as well. That is when the <strong>Inspect Code</strong> feature comes into the play.</p>
-    </div>
- <br>
-    <div id="instruction">
+  </div>
+  <br>
+  <div id="instruction">
     <h2 id="run">Run an inspection</h2>
     <p>To start an inspection of your code:</p>
     <ol style="list-style-type: decimal;">
-        <li>Right-click anywhere in the code editor.</li>
-        <li> Select <strong>Analyze | Inspect Code</strong>. The <strong>Specify Inspection Scope</strong> dialog will be displayed.</li>
+      <li>Right-click anywhere in the code editor.</li>
+      <li> Select <strong>Analyze | Inspect Code</strong>. The <strong>Specify Inspection Scope</strong> dialog will be displayed.</li>
     </ol>
     <img src="images/ScreenScope.PNG" alt="specify inspection scope" class="central" width="60%" height="auto">
-    </div>
-    <br>
-    <div id="instruction">
-        <h2 id="scope">Specify the inspection scope</h2>
-        <p>In this dialog:</p>
-        <ol style="list-style-type: decimal;">
-        <li>Specify the integration scope by choosing between:<ul style="list-style-type: disc;">
-            <li><strong>Whole project:&nbsp;</strong>inspection of a whole project.</li>
-            <li><strong>File &lsquo;file path&rsquo;:</strong> inspection of the opened file only (chosen by default).</li>
-            <li><strong>Custom scope:&nbsp;</strong>a scope that you can either choose from a list or create a new one by clicking <strong>Shift+Enter</strong> and operating with the <strong>Scopes</strong> window.</li>
-        </ul>
-    <p>You can also tick <strong>Inspect injected code</strong>.</p>
-        </li>
-            <li>Specify the inspection profile. You can either:<ul style="list-style-type: disc;">
-            <li>Choose it from the list.</li>
-            <li>Click <strong>Configure</strong> and set up the checks that you would like to perform in the&nbsp;<strong>Inspection</strong> window. The window allows you not only include and exclude tests but also assign it to a scope and set up both severity and highlighting style.</li>
-        </ul>
-                <br>
-                <img src="images/screen3.PNG" alt="set up a scope" class="central" width="80%" height="auto">
-                <br>
-            </li>
-    <li>If needed, click the question icon (<img src="images/screen4.PNG" alt="question icon">). It opens the <span style="color:black;"><a href="https://www.jetbrains.com/help/idea/2022.3/specify-inspection-scope-dialog.html" target="_blank"><span style="color:black;">Specify Inspection Scope dialog</span></a></span> page in our help center.</li>
-            <li>Click <strong>Analyze</strong>. Messages in the status bar mean the inspection is running. If there are no errors, the <strong>Code inspection did not find anything to report</strong> message will be displayed at the right bottom of the screen. In our case, the <strong>Problems</strong> window with a list of errors will be opened.</li>
-</ol>  
-    </div>
-    <br>
-    <div id="instruction">
-        <h2 id="view">View and export the inspection results</h2>
-        <p>If you inspect our code example, you will see six errors: three for both <strong>Java annotator</strong> and <strong>Syntax error</strong> groups.</p>
-        <img src="images/screen5.PNG" alt="errors after the inspection" class="central">
-        <p>On the left from the error list, you can see a context menu.</p>
-        <img src="images/ScreenContext.PNG" alt="context menu" class="central">
-        <p>There, you are able to expand the list of errors by either clicking each group one by one or clicking <strong>Expand All</strong> (<img src="images/screen6.PNG" alt="expand all"> or <strong>Ctrl+NumPad+</strong>).</p>
-        <p>You can also group the list by severity (<img src="images/screen7.PNG" alt="severity">) and/or directory (<img src="images/screen8.PNG" alt="directory">).</p>
-        <p>Plus, you are able to export the list by clicking <strong>Export</strong> (<img src="images/screen9.PNG" alt="export">) and choosing a format among HTML, XML, and Sarif (JSON).</p>     
-    </div>
-    <br>
-    <div id="instruction">
-        <h2 id="ignore">Ignore the errors</h2>
-        <p>You are also able to remove errors from the report. There are various ways to do that. In particular, you can:</p>
-        <ul style="list-style-type: disc;">
-        <li>Exclude an error by clicking its name and <strong>Delete</strong> on a keyboard. Alternatively, you can right-click the error and select <strong>Exclude</strong>. The error will be removed from the list but will reappear on the next report.</li>
-        <li>Suppress an error by clicking its name and selecting <strong>Suppress for class</strong>, <strong>Suppress for method</strong>, or <strong>Suppress all inspections for class</strong>. The <strong>@SuppressWarnings(&ldquo;Check group&rdquo;)</strong> line will be added to the code, the error will be deleted from the list and will not appear on the next report until you remove the suppress warning from your code.</li>
-        </ul>
-     <video width="640" height="400" controls class="central">
-     <source src="videos/video4.mp4" type="video/mp4">       
-     Your browser does not support the video tag.
-     </video>   
-    </div>
-    <br>
-    <div id="instruction">
-        <h2 id="fix">Fix the errors</h2>
-        <p>To fix the errors:</p>
-        <ol style="list-style-type: decimal;">
-            <li>Click an error name on the <strong>Problems</strong> list. Preview of the error will be displayed on the right from the list. If you would like to highlight the line in the code editor, right-click the error and choose <strong>Jump to Source</strong> or click <strong>F4</strong>. Alternatively, you can tick <strong>Navigate with Single Click</strong> (<img src="images/screen10.PNG" alt="navigate with one click">) in the context menu. This way, the code editor will jump to the relevant line every time you click the error, like it is shown on the video below.</li>
-            <video width="640" height="400" controls class="central">
-            <source src="videos/video1.mp4" type="video/mp4">       
-            Your browser does not support the video tag.
-            </video>
-            <br>
-            <li>Click <strong>Apply a quickfix</strong> (<img src="images/screen11.PNG" alt="quickfix"> or <strong>Alt+Enter</strong>) to see if there are any suggestions available.</li>
-            <li>If the quickfix did not help, highlight the line in the code editor and follow the tips suggested in the editor and scrollbar stripes, like it is shown on the video below.</li>
-            <video width="640" height="400" controls class="central">
-            <source src="videos/video2.mp4" type="video/mp4">       
-            Your browser does not support the video tag.
-            </video>
-        
-        <li>If there were no automatically proposed solutions, analyze all hints. There is a high chance they will give you an idea on how to resolve a problem.</li>
-        </ol>
-         <p>As you could see on the video above, we resolved three issues thanks to the IntelliJ IDEA clues. In particular, we:</p>
-        <ul style="list-style-type: disc">
-            <li>Declared a variable <strong>country</strong> as a string on the line 11.</li>
-            <li>Closed the lines 7 and 10 with semicolons.</li>
-        </ul>
-        <p>As a result of the edits, our code looks like this:</p>
-        <!-- Second code example -->
-<div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">java.util.Scanner</span><span style="color: #333333">;</span>
+  </div>
+  <br>
+  <div id="instruction">
+    <h2 id="scope">Specify the inspection scope</h2>
+    <p>In this dialog:</p>
+    <ol style="list-style-type: decimal;">
+      <li>Specify the integration scope by choosing between:<ul style="list-style-type: disc;">
+        <li><strong>Whole project:&nbsp;</strong>inspection of a whole project.</li>
+        <li><strong>File &lsquo;file path&rsquo;:</strong> inspection of the opened file only (chosen by default).</li>
+        <li><strong>Custom scope:&nbsp;</strong>a scope that you can either choose from a list or create a new one by clicking <strong>Shift+Enter</strong> and operating with the <strong>Scopes</strong> window.</li>
+      </ul>
+        <p>You can also tick <strong>Inspect injected code</strong>.</p>
+      </li>
+      <li>Specify the inspection profile. You can either:<ul style="list-style-type: disc;">
+        <li>Choose it from the list.</li>
+        <li>Click <strong>Configure</strong> and set up the checks that you would like to perform in the&nbsp;<strong>Inspection</strong> window. The window allows you not only include and exclude tests but also assign it to a scope and set up both severity and highlighting style.</li>
+      </ul>
+        <br>
+        <img src="images/screen3.PNG" alt="set up a scope" class="central" width="80%" height="auto">
+        <br>
+      </li>
+      <li>If needed, click the question icon (<img src="images/screen4.PNG" alt="question icon">). It opens the <span style="color:black;"><a href="https://www.jetbrains.com/help/idea/2022.3/specify-inspection-scope-dialog.html" target="_blank"><span style="color:black;">Specify Inspection Scope dialog</span></a></span> page in our help center.</li>
+      <li>Click <strong>Analyze</strong>. Messages in the status bar mean the inspection is running. If there are no errors, the <strong>Code inspection did not find anything to report</strong> message will be displayed at the right bottom of the screen. In our case, the <strong>Problems</strong> window with a list of errors will be opened.</li>
+    </ol>
+  </div>
+  <br>
+  <div id="instruction">
+    <h2 id="view">View and export the inspection results</h2>
+    <p>If you inspect our code example, you will see six errors: three for both <strong>Java annotator</strong> and <strong>Syntax error</strong> groups.</p>
+    <img src="images/screen5.PNG" alt="errors after the inspection" class="central">
+    <p>On the left from the error list, you can see a context menu.</p>
+    <img src="images/ScreenContext.PNG" alt="context menu" class="central">
+    <p>There, you are able to expand the list of errors by either clicking each group one by one or clicking <strong>Expand All</strong> (<img src="images/screen6.PNG" alt="expand all"> or <strong>Ctrl+NumPad+</strong>).</p>
+    <p>You can also group the list by severity (<img src="images/screen7.PNG" alt="severity">) and/or directory (<img src="images/screen8.PNG" alt="directory">).</p>
+    <p>Plus, you are able to export the list by clicking <strong>Export</strong> (<img src="images/screen9.PNG" alt="export">) and choosing a format among HTML, XML, and Sarif (JSON).</p>
+  </div>
+  <br>
+  <div id="instruction">
+    <h2 id="ignore">Ignore the errors</h2>
+    <p>You are also able to remove errors from the report. There are various ways to do that. In particular, you can:</p>
+    <ul style="list-style-type: disc;">
+      <li>Exclude an error by clicking its name and <strong>Delete</strong> on a keyboard. Alternatively, you can right-click the error and select <strong>Exclude</strong>. The error will be removed from the list but will reappear on the next report.</li>
+      <li>Suppress an error by clicking its name and selecting <strong>Suppress for class</strong>, <strong>Suppress for method</strong>, or <strong>Suppress all inspections for class</strong>. The <strong>@SuppressWarnings(&ldquo;Check group&rdquo;)</strong> line will be added to the code, the error will be deleted from the list and will not appear on the next report until you remove the suppress warning from your code.</li>
+    </ul>
+    <video width="640" height="400" controls class="central">
+      <source src="videos/video4.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <br>
+  <div id="instruction">
+    <h2 id="fix">Fix the errors</h2>
+    <p>To fix the errors:</p>
+    <ol style="list-style-type: decimal;">
+      <li>Click an error name on the <strong>Problems</strong> list. Preview of the error will be displayed on the right from the list. If you would like to highlight the line in the code editor, right-click the error and choose <strong>Jump to Source</strong> or click <strong>F4</strong>. Alternatively, you can tick <strong>Navigate with Single Click</strong> (<img src="images/screen10.PNG" alt="navigate with one click">) in the context menu. This way, the code editor will jump to the relevant line every time you click the error, like it is shown on the video below.</li>
+      <video width="640" height="400" controls class="central">
+        <source src="videos/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <br>
+      <li>Click <strong>Apply a quickfix</strong> (<img src="images/screen11.PNG" alt="quickfix"> or <strong>Alt+Enter</strong>) to see if there are any suggestions available.</li>
+      <li>If the quickfix did not help, highlight the line in the code editor and follow the tips suggested in the editor and scrollbar stripes, like it is shown on the video below.</li>
+      <video width="640" height="400" controls class="central">
+        <source src="videos/video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <li>If there were no automatically proposed solutions, analyze all hints. There is a high chance they will give you an idea on how to resolve a problem.</li>
+    </ol>
+    <p>As you could see on the video above, we resolved three issues thanks to the IntelliJ IDEA clues. In particular, we:</p>
+    <ul style="list-style-type: disc">
+      <li>Declared a variable <strong>country</strong> as a string on the line 11.</li>
+      <li>Closed the lines 7 and 10 with semicolons.</li>
+    </ul>
+    <p>As a result of the edits, our code looks like this:</p>
+    <!-- Second code example -->
+    <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">java.util.Scanner</span><span style="color: #333333">;</span>
 
 <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">Main</span> <span style="color: #333333">{</span>
     <span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">static</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">main</span><span style="color: #333333">(</span>String<span style="color: #333333">[]</span> args<span style="color: #333333">)</span> <span style="color: #333333">{</span>
@@ -174,55 +174,55 @@
     <span style="color: #333333">}</span>
 <span style="color: #333333">}</span>
 </pre></div>
-   
-        <!-- End of second code example -->
-    </div>
-        <br>
-        <div id="instruction">
-            <h2 id="rerun">Rerun the inspection and run the program</h2>
-            <p>After the edits, some errors in the list are marked as <strong>No longer valid</strong>. Still, we cannot be sure that our program runs smoothly. To check the errors before starting the program, rerun the inspections. There are three ways to do that. You can:</p>
-<ul style="list-style-type: disc;">
-    <li>Do it with the same settings by clicking <strong>Rerun Inspection</strong> in the context menu (<img src="images/screen12.PNG" alt="rerun inspection"> or <strong>Ctrl+F5</strong>).</li>
-    <li>Change the inspection profile by clicking <strong>Settings</strong> in the context menu (<img src="images/screen13.PNG" alt="settings">) and setting up a scope in the <strong>Inspection</strong> window.</li>
-    <li>Rerun a particular test group (syntax errors, for example) by right-clicking anywhere inside the group in the <strong>Problems</strong> list, selecting <strong>Run inspections on&hellip;</strong>, specifying a scope and clicking <strong>Analyze</strong>. The video below shows this process.</li>
-    <video width="640" height="400" controls class="central">
-    <source src="videos/video3.mp4" type="video/mp4">       
-     Your browser does not support the video tag.
-     </video>
-</ul>
-<p>If you reinspect our code with the same settings, you will see there is one error left. Specifically, the line 13 has the issue.</p>
-            <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Hello, &quot;</span> <span style="color: #333333">+</span> name <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; from &quot;</span> <span style="color: #333333">+</span> country <span style="color: #333333">+</span> <span style="color: #333333">!);</span>
-</pre></div>
-<p>As you can see, we have not closed the exclamation mark (!) with quotation marks (&ldquo;&rdquo;). The edited line will look like this:</p>
-            <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Hello, &quot;</span> <span style="color: #333333">+</span> name <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; from &quot;</span> <span style="color: #333333">+</span> country <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;!&quot;</span><span style="color: #333333">);</span>
-</pre></div>
-<p>If you change the line 13 to the one above and rerun the inspection, you will see the <strong>Code inspection did not find anything to report</strong> message at the right bottom of a screen. As a result, the program will run smoothly with the output like this:</p>
-            <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
-            <p>What&apos;s your name?</p>
-<p><em><span style="color:#548235;">Frodo</span></em></p>
-<p>Where are you from?</p>
-<p><em><span style="color:#548235;">the Shire</span></em></p>
-<p>Hello, Frodo from the Shire!</p>
-            </div>
-        </div>
-        <br>
-        <h2 id="video">Tutorial video</h2>
-            <p>You can watch a tutorial video about the code inspection with the same steps below.</p>
-    <h2 id="every_error">Did Inspect Code find every error?</h2>
-    <p>Unfortunately, we cannot guarantee that the code inspection finds all errors. Clean code from the inspection standpoint does not mean the program is error-free. For example, even our simple program passed the last code inspection, but still has some flaws. For instance, it does not capitalize neither name nor country, it does not ask a user to enter their details again in case of zero input, and so on.</p> 
-    <p>Remember that some of the errors are not issues from a technical standpoint but they contradict a logical human perception of your application. Such errors are tough to find during the development. However, IntelliJ IDEA provides several solutions that will help you with this challenging task.</p>
-    <h1 id="next">What's next?</h1>
-    <p>We recommend reading about such solutions by following the links below:</p>
+
+    <!-- End of second code example -->
+  </div>
+  <br>
+  <div id="instruction">
+    <h2 id="rerun">Rerun the inspection and run the program</h2>
+    <p>After the edits, some errors in the list are marked as <strong>No longer valid</strong>. Still, we cannot be sure that our program runs smoothly. To check the errors before starting the program, rerun the inspections. There are three ways to do that. You can:</p>
     <ul style="list-style-type: disc;">
+      <li>Do it with the same settings by clicking <strong>Rerun Inspection</strong> in the context menu (<img src="images/screen12.PNG" alt="rerun inspection"> or <strong>Ctrl+F5</strong>).</li>
+      <li>Change the inspection profile by clicking <strong>Settings</strong> in the context menu (<img src="images/screen13.PNG" alt="settings">) and setting up a scope in the <strong>Inspection</strong> window.</li>
+      <li>Rerun a particular test group (syntax errors, for example) by right-clicking anywhere inside the group in the <strong>Problems</strong> list, selecting <strong>Run inspections on&hellip;</strong>, specifying a scope and clicking <strong>Analyze</strong>. The video below shows this process.</li>
+      <video width="640" height="400" controls class="central">
+        <source src="videos/video3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </ul>
+    <p>If you reinspect our code with the same settings, you will see there is one error left. Specifically, the line 13 has the issue.</p>
+    <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Hello, &quot;</span> <span style="color: #333333">+</span> name <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; from &quot;</span> <span style="color: #333333">+</span> country <span style="color: #333333">+</span> <span style="color: #333333">!);</span>
+</pre></div>
+    <p>As you can see, we have not closed the exclamation mark (!) with quotation marks (&ldquo;&rdquo;). The edited line will look like this:</p>
+    <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Hello, &quot;</span> <span style="color: #333333">+</span> name <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; from &quot;</span> <span style="color: #333333">+</span> country <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;!&quot;</span><span style="color: #333333">);</span>
+</pre></div>
+    <p>If you change the line 13 to the one above and rerun the inspection, you will see the <strong>Code inspection did not find anything to report</strong> message at the right bottom of a screen. As a result, the program will run smoothly with the output like this:</p>
+    <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
+      <p>What&apos;s your name?</p>
+      <p><em><span style="color:#548235;">Frodo</span></em></p>
+      <p>Where are you from?</p>
+      <p><em><span style="color:#548235;">the Shire</span></em></p>
+      <p>Hello, Frodo from the Shire!</p>
+    </div>
+  </div>
+  <br>
+  <h2 id="video">Tutorial video</h2>
+  <p>You can watch a tutorial video about the code inspection with the same steps below.</p>
+  <h2 id="every_error">Did Inspect Code find every error?</h2>
+  <p>Unfortunately, we cannot guarantee that the code inspection finds all errors. Clean code from the inspection standpoint does not mean the program is error-free. For example, even our simple program passed the last code inspection, but still has some flaws. For instance, it does not capitalize neither name nor country, it does not ask a user to enter their details again in case of zero input, and so on.</p>
+  <p>Remember that some of the errors are not issues from a technical standpoint but they contradict a logical human perception of your application. Such errors are tough to find during the development. However, IntelliJ IDEA provides several solutions that will help you with this challenging task.</p>
+  <h1 id="next">What's next?</h1>
+  <p>We recommend reading about such solutions by following the links below:</p>
+  <ul style="list-style-type: disc;">
     <li><a href="https://www.jetbrains.com/help/idea/tests-in-ide.html" target="_blank">Testing</a>.</li>
     <li><u><a href="https://www.jetbrains.com/help/idea/debugging-code.html" target="_blank">Debugging</a></u>.</li>
     <li>More details about the <a href="https://www.jetbrains.com/help/idea/code-inspection.html" target="_blank">code inspection</a>.</li>
-    </ul>
+  </ul>
 </div>
 <div id="footer">
-<a href="https://www.jetbrains.com/">
-<img src="images/jet_logo.png" alt="JetBrains logo" width="48" height="48" class="right">
-</a>
+  <a href="https://www.jetbrains.com/">
+    <img src="images/jet_logo.png" alt="JetBrains logo" width="48" height="48" class="right">
+  </a>
 </div>
 </body>
 </html>
