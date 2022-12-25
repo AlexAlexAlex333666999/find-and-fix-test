@@ -126,13 +126,17 @@
         <li>Exclude an error by clicking its name and <strong>Delete</strong> on a keyboard. Alternatively, you can right-click the error and select <strong>Exclude</strong>. The error will be removed from the list but will reappear on the next report.</li>
         <li>Suppress an error by clicking its name and selecting <strong>Suppress for class</strong>, <strong>Suppress for method</strong>, or <strong>Suppress all inspections for class</strong>. The <strong>@SuppressWarnings(&ldquo;Check group&rdquo;)</strong> line will be added to the code, the error will be deleted from the list and will not appear on the next report until you remove the suppress warning from your code.</li>
         </ul>
+     <video width="640" height="400" controls class="central">
+     <source src="videos/video4.mp4" type="video/mp4">       
+     Your browser does not support the video tag.
+     </video>   
     </div>
     <br>
     <div id="instruction">
         <h2 id="fix">Fix the errors</h2>
         <p>To fix the errors:</p>
         <ol style="list-style-type: decimal;">
-            <li>Click an error name on the <strong>Problems</strong> list. Preview of the error will be displayed on the right from the list. If you would like to highlight the line in the code editor, right-click on the error and choose <strong>Jump to Source</strong> or click <strong>F4</strong>. Alternatively, you can tick <strong>Navigate with Single Click</strong> (<img src="images/screen10.PNG" alt="navigate with one click">) in the context menu. This way, the code editor will jump to the relevant line every time you click the error, like it is shown on the video below.</li>
+            <li>Click an error name on the <strong>Problems</strong> list. Preview of the error will be displayed on the right from the list. If you would like to highlight the line in the code editor, right-click the error and choose <strong>Jump to Source</strong> or click <strong>F4</strong>. Alternatively, you can tick <strong>Navigate with Single Click</strong> (<img src="images/screen10.PNG" alt="navigate with one click">) in the context menu. This way, the code editor will jump to the relevant line every time you click the error, like it is shown on the video below.</li>
             <video width="640" height="400" controls class="central">
             <source src="videos/video1.mp4" type="video/mp4">       
             Your browser does not support the video tag.
@@ -144,12 +148,13 @@
             <source src="videos/video2.mp4" type="video/mp4">       
             Your browser does not support the video tag.
             </video>
+        
+        <li>If there were no automatically proposed solutions, analyze all hints. There&rsquo;s a high chance they will give you an idea on how to resolve a problem.</li>
         </ol>
-        <p>If there were no automatically proposed solutions, analyze all hints. There&rsquo;s a high chance they will give you an idea on how to resolve a problem.</p>
-        <p>As you could see on the video above, we resolved three issues thanks to the IntelliJ IDEA clues. In particular, we:</p>
+         <p>As you could see on the video above, we resolved three issues thanks to the IntelliJ IDEA clues. In particular, we:</p>
         <ul style="list-style-type: disc">
             <li>Declared a variable <strong>country</strong> as a string on the line 11.</li>
-            <li>Closed lines 7 and 10 with semicolons.</li>
+            <li>Closed the lines 7 and 10 with semicolons.</li>
         </ul>
         <p>As a result of the edits, our code looks like this:</p>
         <!-- Second code example -->
@@ -175,7 +180,7 @@
         <br>
         <div id="instruction">
             <h2 id="rerun">Rerun the inspection and run the program</h2>
-            <p>After the edits, some errors in the list will be marked as <strong>No longer valid</strong>. Still, we cannot be sure that our program runs smoothly. To check the errors before running the program, rerun the inspections. There are three ways to do that. You can:</p>
+            <p>After the edits, some errors in the list are marked as <strong>No longer valid</strong>. Still, we cannot be sure that our program runs smoothly. To check the errors before starting the program, rerun the inspections. There are three ways to do that. You can:</p>
 <ul style="list-style-type: disc;">
     <li>Do it with the same settings by clicking <strong>Rerun Inspection</strong> in the context menu (<img src="images/screen12.PNG" alt="rerun inspection"> or <strong>Ctrl+F5</strong>).</li>
     <li>Change the inspection profile by clicking <strong>Settings</strong> in the context menu (<img src="images/screen13.PNG" alt="settings">) and setting up a scope in the <strong>Inspection</strong> window.</li>
@@ -204,8 +209,8 @@
         <h2 id="video">Tutorial video</h2>
             <p>You can watch a tutorial video about the code inspection with the same steps below.</p>
     <h2 id="every_error">Did Inspect Code find every error?</h2>
-    <p>Unfortunately, we can’t guarantee the code inspection finds all errors. Clean code from the inspection standpoint doesn’t mean the program is error-free. For example, even our simple program passed the last code inspection, but still has some flaws. For instance, it doesn’t capitalize neither name nor country, it doesn’t ask a user to enter their details again in case of zero input, and so on.</p> 
-    <p>Remember that some of the errors aren’t issues from a technical standpoint but they contradict a logical human perception of your applications. Such errors are tough to find during the development. However, IntelliJ IDEA provides several solutions that will help you with this challenging task.</p>
+    <p>Unfortunately, we cannot guarantee that the code inspection finds all errors. Clean code from the inspection standpoint does not mean the program is error-free. For example, even our simple program passed the last code inspection, but still has some flaws. For instance, it doesn’t capitalize neither name nor country, it does not ask a user to enter their details again in case of zero input, and so on.</p> 
+    <p>Remember that some of the errors are not issues from a technical standpoint but they contradict a logical human perception of your application. Such errors are tough to find during the development. However, IntelliJ IDEA provides several solutions that will help you with this challenging task.</p>
     <h1 id="next">What's next?</h1>
     <p>We recommend reading about such solutions by following the links below:</p>
     <ul style="list-style-type: disc;">
