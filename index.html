@@ -67,7 +67,32 @@
   <br>
   <div id="instruction">
     <h2 id="open_code">Open the code in IntelliJ IDEA</h2>
-    <p>If you open the code in IntelliJ IDEA, you will see clues telling you about the errors: the code editor will contain a few red lines and one green line, the <strong>country</strong> variable will be written in red, the scrollbar will display red stripes.</p>
+    <p>To open the code in IntelliJ IDEA, create a new project first. To do that:</p>
+    <ol style="list-style-type: decimal;">
+      <li>Launch IntelliJ IDEA.</li>
+      <li>From the main menu, select <strong>File | New Project</strong>.</li>
+      <li>In the <strong>New Project</strong> wizard, select <strong>New Project</strong> from the list on the left.</li>
+      <li>Name the project (for example, <strong>InspectTest</strong>) and change the default location if necessary.</li>
+      <li>We&apos;re not going to work with version control systems in this tutorial, so leave the <strong>Create Git repository</strong> option disabled.</li>
+      <li>Make sure that <strong>Java</strong> language and <strong>IntelliJ</strong> build system are selected.</li>
+      <li>If the&nbsp;<strong>JDK list</strong> contains a needed JDK, select it.&nbsp;<br>
+      If the JDK is installed on your device, but not defined in the IDE, select&nbsp;<strong>Add JDK</strong> and specify the path to the JDK home directory (for example, <strong>/Library/Java/JavaVirtualMachines/jdk-17.0.2.jdk</strong>).<br>
+      <img src="images/selectJDK.png" alt="error indicators" class="central" width="70%" height="auto">
+      <br>
+      If you do not have the necessary JDK on your device, select <strong>Download JDK</strong>. In the next dialog, specify the JDK vendor (for example, OpenJDK), version, change the installation path if required, and click <strong>Download</strong>.</li>
+      <img src="images/downloadJDK.png" alt="error indicators" class="central" width="70%" height="auto">
+      <br>
+      <li>Tick <strong>Add sample code</strong>. It will create the <strong>Main</strong> class where we will work.</li>
+      <li>Click <strong>Create</strong>.</li>
+      <li>Choose <strong>This Window&nbsp;</strong>to display the project in the same window.</li>
+      <li>After the project is loaded and displayed, open the <strong>/src/Main.java</strong>.</li>
+      <li>Copy our code sample and paste it into the code editor.</li>
+    </ol>
+      <video width="100%" height="auto" controls class="central">
+      <source src="videos/video7.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>       
+    <p>As you can see, the code editor already displays clues telling you about the errors: the code editor will contain a few red lines and one green line, the <strong>country</strong> variable will be written in red, the scrollbar will display red stripes.</p>
     <img src="images/screen1.png" alt="error indicators" class="central" width="70%" height="auto">
     <p>For the small program like ours, these hints would probably be enough. However, if you are working with a piece of code that takes hundreds of lines, you might want to inspect the whole piece with one click and see a list of errors. Maybe you would like to export the list as well. That is when the <strong>Inspect Code</strong> feature comes into play.</p>
   </div>
