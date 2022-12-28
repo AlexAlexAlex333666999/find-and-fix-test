@@ -109,7 +109,7 @@
   <br>
   <div id="instruction">
     <h2 id="view">View and export the inspection results</h2>
-    <p>If you inspect our code example, you will see six errors: three for both <strong>Java annotator</strong> and <strong>Syntax error</strong> groups.</p>
+    <p>If you inspect our code example, the <strong>Problems</strong> list will contain one typo and six errors: three for both <strong>Java annotator</strong> and <strong>Syntax error</strong> groups.</p>
     <img src="images/screen5.PNG" alt="errors after the inspection" class="central">
     <p>On the left from the error list, you can see a toolbar.</p>
     <img src="images/ScreenContext.PNG" alt="toolbar" class="central">
@@ -150,10 +150,12 @@
       </video>
       <li>If there were no automatically proposed solutions, analyze the hints. There is a high chance they will give you an idea on how to resolve a problem.</li>
     </ol>
-    <p>For now, let's fix the following errors:</p>
+    <p>Let’s fix the issues by doing the following:</p>
     <ul style="list-style-type: disc">
-      <li>Declare a variable <strong>country</strong> as a string on the line 11.</li>
-      <li>Close the lines 7 and 10 with semicolons.</li>
+      <li>Close the lines 6 and 9 with semicolons.</li>
+      <li>Write <strong>are you</strong> instead of <strong>areyou</strong> on the line 9.</li>
+      <li>Declare a variable <strong>country</strong> as a string on the line 10.</li>
+      <li>Close the exclamation mark (!) with quotation marks (&ldquo;&rdquo;) on the line 12.</li>
     </ul>
     <p>As a result of the edits, our code looks like this:</p>
     <!-- Second code example -->
@@ -169,7 +171,7 @@
         System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Where are you from?&quot;</span><span style="color: #333333">);</span>
         String country <span style="color: #333333">=</span> myObj<span style="color: #333333">.</span><span style="color: #0000CC">nextLine</span><span style="color: #333333">();</span>
 
-        System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Hello, &quot;</span> <span style="color: #333333">+</span> name <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; from &quot;</span> <span style="color: #333333">+</span> country <span style="color: #333333">+</span> <span style="color: #333333">!);</span>
+        System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Hello, &quot;</span> <span style="color: #333333">+</span> name <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; from &quot;</span> <span style="color: #333333">+</span> country <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;!&quot;</span><span style="color: #333333">);</span>
     <span style="color: #333333">}</span>
 <span style="color: #333333">}</span>
 </pre></div>
