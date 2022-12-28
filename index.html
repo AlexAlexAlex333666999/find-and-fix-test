@@ -29,9 +29,8 @@
     <li><a href="#code_example">Code example</a></li>
     <li><a href="#open_code">Open the code in IntelliJ IDEA</a></li>
     <li><a href="#run">Run an inspection</a></li>
-    <li><a href="#scope">Specify the inspection scope</a></li>
+    <li><a href="#scope">Specify the inspection scope and inspect the code</a></li>
     <li><a href="#view">View and export the inspection results</a></li>
-    <li><a href="#ignore">Ignore the errors</a></li>
     <li><a href="#fix">Fix the errors</a></li>
     <li><a href="#rerun">Rerun the inspection and run the program</a></li>
     <li><a href="#video">Tutorial video</a></li>
@@ -39,7 +38,6 @@
     <li><a href="#next">What's next?</a></li>
   </ul>
 </div>
-
 <div id="content">
   <h1>Tutorial: Inspect your Java code to find and fix errors</h1>
   <p>This tutorial describes how to find and fix errors in your Java application with a help of <strong>Inspect Code</strong>. This feature allows you to get a list of errors of your program, export the list, quickly fix the issues, and many more.</p>
@@ -85,26 +83,23 @@
   </div>
   <br>
   <div id="instruction">
-    <h2 id="scope">Specify the inspection scope</h2>
-    <p>In this dialog:</p>
+    <h2 id="scope">Specify the inspection scope and inspect the code</h2>
+    <p>Since our program contains one file, you can leave the default choice, <strong>File &lsquo;file_path&rsquo;:</strong>, for the inspection scope.</p>
+    <p>As for the inspection profile:</p>
     <ol style="list-style-type: decimal;">
-      <li>Specify the inspection scope by choosing between:<ul style="list-style-type: disc;">
-        <li><strong>Whole project:&nbsp;</strong>inspection of a whole project.</li>
-        <li><strong>File &lsquo;file_path&rsquo;:</strong> inspection of the opened file only (chosen by default).</li>
-        <li><strong>Custom scope:&nbsp;</strong>a scope that you can either choose from a list or create a new one by clicking <strong>Shift+Enter</strong> and operating with the <strong>Scopes</strong> window.</li>
-      </ul>
-        <p>You can also tick <strong>Inspect injected code</strong>.</p>
-      </li>
-      <li>Specify the inspection profile. You can either:<ul style="list-style-type: disc;">
-        <li>Choose it from the list.</li>
-        <li>Click <strong>Configure</strong> and, in the&nbsp;<strong>Inspection</strong> window, set up the checks that you would like to perform. The window allows you not only include and exclude tests but also assign it to a scope and set up both severity and highlighting style.</li>
-      </ul>
-        <br>
-        <img src="images/screen3.PNG" alt="set up a scope" class="central" width="80%" height="auto">
-        <br>
-      </li>
-      <li>Click <strong>Analyze</strong>. Messages in the status bar mean the inspection is running. If there are no errors, the <strong>Code inspection did not find anything to report</strong> message will be displayed at the right bottom of the screen. In our case, the <strong>Problems</strong> window with a list of errors will be opened.</li>
-    </ol>
+      <li>Click <strong>Configure</strong>. The <strong>Inspections</strong> window will be opened.</li>
+      <img src="images/screen_profile.png" alt="specify inspection scope" class="central" width="80%" height="auto">
+      <li>Select <strong>Project Default</strong> in the <strong>Profile</strong> dropdown if you want to change the settings of your current project only. If you would like to change the defaults for the whole IDE, select <strong>Default</strong>.</li>
+      <li>To find essential errors that stop our program from running, make sure the <strong>General</strong> group has both <strong>Java annotator</strong> and <strong>Syntax error</strong> inspections ticked.</li>
+      <li>To find a typo in our code, make sure that <strong>Proofreading | Typo</strong> is ticked as well.</li>
+      <li>Click <strong>Apply</strong> and then <strong>OK</strong>.</li>
+     </ol>
+     <p class="warning">You can find more information about inspection profile configurations in the <a href="https://www.jetbrains.com/help/idea/customizing-profiles.html">Configure profiles</a> section.</p>
+     <p>To start the inspection, click <strong>Analyze</strong>. The <strong>Problems</strong> window with a list of errors will be opened.</p>
+     <video width="100%" height="auto" controls class="central">
+      <source src="videos/video5.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+     </video>                
   </div>
   <br>
   <div id="instruction">
@@ -116,19 +111,6 @@
     <p>There, you are able to expand the list of errors by either clicking each group one by one or clicking <strong>Expand All</strong> (<img src="images/screen6.PNG" alt="expand all"> or <strong>Ctrl+NumPad+</strong>).</p>
     <p>You can also group the list by severity (<img src="images/screen7.PNG" alt="severity">) and/or directory (<img src="images/screen8.PNG" alt="directory">).</p>
     <p>Plus, you are able to export the list by clicking <strong>Export</strong> (<img src="images/screen9.PNG" alt="export">) and choosing a format among HTML, XML, and Sarif (JSON).</p>
-  </div>
-  <br>
-  <div id="instruction">
-    <h2 id="ignore">Ignore the errors</h2>
-    <p>You can also remove the errors from the report. There are various ways to do that. In particular, you can:</p>
-    <ul style="list-style-type: disc;">
-      <li>Exclude an error by clicking its name and <strong>Delete</strong> on a keyboard. Alternatively, you can right-click the error and select <strong>Exclude</strong>. The error will be removed from the list but will reappear on the next report.</li>
-      <li>Suppress an error by clicking its name and selecting <strong>Suppress for class</strong>, <strong>Suppress for method</strong>, or <strong>Suppress all inspections for class</strong>. The <strong>@SuppressWarnings(&ldquo;Check group&rdquo;)</strong> line will be added to the code, the error will be deleted from the list and will not appear on the next report until you remove the suppress warning from your code.</li>
-    </ul>
-    <video width="100%" height="auto" controls class="central">
-      <source src="videos/video4.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
   </div>
   <br>
   <div id="instruction">
@@ -183,15 +165,9 @@
   <div id="instruction">
     <h2 id="rerun">Rerun the inspection and run the program</h2>
     <p>After the edits, some errors in the list are marked as <strong>No longer valid</strong>. Still, we cannot be sure that our program runs smoothly. To check the errors before starting the program, rerun the inspection. To do that, click <strong>Rerun Inspection</strong> in the toolbar (<img src="images/screen12.PNG" alt="rerun inspection"> or <strong>Ctrl+F5</strong>).</p>
-    <p>For our edited code, the <strong>Code inspection did not find anything to report</strong> message will be displayed at the right bottom of a screen. It means we are good to run the program. To do that, you can either:
-    <ul style="list-style-type: disc;">
-      <li>Click <strong>Run &lsquo;Main&rsquo;</strong> (<img src="images/run_main.PNG" alt="run icon">) on the main toolbar.</li>
-      <li>Select <strong>Run | Run &lsquo;Main&rsquo;</strong> from the main menu.</li>
-      <li>Select <strong>Run | Run</strong> from the main menu.</li>
-      <li>Click Shift+F10.</li>
-    </ul>
     <img src="images/run.png" alt="run the program" class="central" width="100%" height="auto">
-    <p class="warning">In our case, there is no difference between these running options. You can find more information on how to run applications in the <a href="https://www.jetbrains.com/help/idea/running-applications.html">Running section</a>.</p>
+    <p class="warning">You can find more information about different ways of running applications in the <a href="https://www.jetbrains.com/help/idea/running-applications.html">Running</a> section.</p>
+    <p>For our edited code, the <strong>Code inspection did not find anything to report</strong> message will be displayed at the right bottom of a screen. It means we are good to run the program. To do that, click <strong>Run &lsquo;Main.java&rsquo;</strong> (<img src="images/run_main.PNG" alt="run icon"> or <strong>Shift+F10</strong>) on the main toolbar. 
     <p>Since we fixed the previous issues, the program will run smoothly with the output like this:</p>
     <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
       <p>What&apos;s your name?</p>
