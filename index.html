@@ -48,7 +48,7 @@
   <p>In our case, an error is any difference between an expected and actual behavior of your code. The expected behavior may come from requirements for the program, industry standards, or your own perception.</p>
   <h2 id="code_example">Code example</h2>
   <p>As an example, let’s take a small program that asks users for a name and country and then greets them.</p>
-  <p id="warning">We intentionally put several errors into the code.</p>
+  <p class="warning">We intentionally put several errors into the code.</p>
   <!-- First code example -->
   <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">java.util.Scanner</span><span style="color: #333333">;</span>
 <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">Main</span> <span style="color: #333333">{</span>
@@ -181,23 +181,17 @@
   <br>
   <div id="instruction">
     <h2 id="rerun">Rerun the inspection and run the program</h2>
-    <p>After the edits, some errors in the list are marked as <strong>No longer valid</strong>. Still, we cannot be sure that our program runs smoothly. To check the errors before starting the program, rerun the inspection. There are three ways to do that. You can:</p>
+    <p>After the edits, some errors in the list are marked as <strong>No longer valid</strong>. Still, we cannot be sure that our program runs smoothly. To check the errors before starting the program, rerun the inspection. To do that, click <strong>Rerun Inspection</strong> in the toolbar (<img src="images/screen12.PNG" alt="rerun inspection"> or <strong>Ctrl+F5</strong>).</p>
+    <p>For our edited code, the <strong>Code inspection did not find anything to report</strong> message will be displayed at the right bottom of a screen. It means we are good to go. To run the program, you can either:
     <ul style="list-style-type: disc;">
-      <li>Do it with the same settings by clicking <strong>Rerun Inspection</strong> in the toolbar (<img src="images/screen12.PNG" alt="rerun inspection"> or <strong>Ctrl+F5</strong>).</li>
-      <li>Change the inspection profile by clicking <strong>Settings</strong> in the toolbar (<img src="images/screen13.PNG" alt="settings">) and setting up a scope in the <strong>Inspection</strong> window. Then, you are free to rerun the inspection by clicking <strong>Rerun Inspection</strong> in the toolbar (<img src="images/screen12.PNG" alt="rerun inspection"> or <strong>Ctrl+F5</strong>).</li>
-      <li>Rerun a particular test group (syntax errors, for example) by right-clicking anywhere inside the group in the <strong>Problems</strong> list, selecting <strong>Run inspections on&hellip;</strong>, specifying a scope and clicking <strong>Analyze</strong>. The video below shows this process.</li>
-      <video width="640" height="400" controls class="central">
-        <source src="videos/video3.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <li>Click <strong>Run &lsquo;Main&rsquo;</strong> (<img src="images/run_main.PNG" alt="run icon") on the main toolbar.</li>
+      <li>Select <strong>Run | Run &lsquo;Main&rsquo;</strong> from the main menu.</li>
+      <li>Select <strong>Run | Run</strong> from the main menu.</li>
+      <li>Click Shift+F10.</li>
+      <img src="images/run.png" alt="run the program" class="central" width="85%" height="auto">
     </ul>
-    <p>If you reinspect our code with the same settings, you will see there is one error left. Specifically, the line 13 has the issue.</p>
-    <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Hello, &quot;</span> <span style="color: #333333">+</span> name <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; from &quot;</span> <span style="color: #333333">+</span> country <span style="color: #333333">+</span> <span style="color: #333333">!);</span>
-</pre></div>
-    <p>As you can see, we have not closed the exclamation mark (!) with quotation marks (&ldquo;&rdquo;). The edited line will look like this:</p>
-    <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Hello, &quot;</span> <span style="color: #333333">+</span> name <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; from &quot;</span> <span style="color: #333333">+</span> country <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;!&quot;</span><span style="color: #333333">);</span>
-</pre></div>
-    <p>If you change the line 13 to the one above and rerun the inspection, you will see the <strong>Code inspection did not find anything to report</strong> message at the right bottom of a screen. As a result, the program will run smoothly with the output like this:</p>
+    <p class="warning">In our case, there is no difference between these options. You can find more information on how to run applications in the <a href="https://www.jetbrains.com/help/idea/running-applications.html">Running section</a>.</p>
+    Since we fixed the previous issues, the program will run smoothly with the output like this:
     <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
       <p>What&apos;s your name?</p>
       <p><em><span style="color:#548235;">Frodo</span></em></p>
