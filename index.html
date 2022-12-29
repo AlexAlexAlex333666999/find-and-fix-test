@@ -5,7 +5,24 @@
   <meta name="viewport" content="width=device-width, maximum-scale=1">
   <title>Tutorial: Inspect your Java code to find and fix errors</title>
   <link href="styles.css" rel="stylesheet">
-</head>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      }
+      else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+  </head>
 <body>
 <div id="header">
   <a href="index.html">
@@ -98,23 +115,23 @@
       </video>       
     <br>
     </div>
-    <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
 
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
       this.classList.toggle("active");
       var content = this.nextElementSibling;
       if (content.style.display === "block") {
         content.style.display = "none";
-      } 
+      }
       else {
         content.style.display = "block";
-        }
-      });
-    }
-    </script>   
+      }
+    });
+  }
+</script>
     <p>As you can see, the code editor already displays clues telling you about the errors: the code editor will contain a few red lines and one green line, the <strong>country</strong> variable will be written in red, the scrollbar will display red stripes.</p>
     <img src="images/screen1.png" alt="error indicators" class="central" width="70%" height="auto">
     <p>For the small program like ours, these hints would probably be enough. However, if you are working with a piece of code that takes hundreds of lines, you might want to inspect the whole piece with one click and see a list of errors. Maybe you would like to export the list as well. That is when the <strong>Inspect Code</strong> feature comes into play.</p>
