@@ -116,7 +116,7 @@
     });
   }
 </script>
-    <p>As you can see, the code editor already displays clues telling you about the errors: the code editor will contain a few red lines and one green line, the <strong>country</strong> variable will be written in red, the scrollbar will display red stripes.</p>
+    <p>As you can see, the code editor displays clues telling you about the errors: the code editor contains a few red lines and one green line, the <strong>country</strong> variable is written in red, the scrollbar displays red stripes.</p>
     <img src="images/screen1.png" alt="error indicators" class="central" width="70%" height="auto">
     <p>For the small program like ours, these hints would probably be enough. However, if you are working with a piece of code that takes hundreds of lines, you might want to inspect the whole piece with one click and see a list of errors. Maybe you would like to export the list as well. That is when the <strong>Inspect Code</strong> feature comes into play.</p>
   </div>
@@ -133,19 +133,19 @@
   <br>
   <div id="instruction">
     <h2 id="scope">Specify the inspection scope and inspect the code</h2>
-    <p>Since our program contains one file, you can leave the default choice, <strong>File &lsquo;file_path&rsquo;:</strong>, for the inspection scope.</p>
+    <p>Since our program contains one file, you can leave the default choice, <strong>File &lsquo;file_path&rsquo;</strong>, for the inspection scope.</p>
     <p>As for the inspection profile:</p>
     <ol style="list-style-type: decimal;">
       <li>Click <strong>Configure</strong>. The <strong>Inspections</strong> window will be opened.</li>
       <br>
       <img src="images/screen_profile.png" alt="inspections window" class="central" width="70%" height="auto">
       <br>
-      <li>Select <strong>Project Default</strong> in the <strong>Profile</strong> dropdown if you want to change the settings of your current project only. If you would like to change the defaults for the whole IDE, select <strong>Default</strong>.</li>
+      <li>Select <strong>Project Default</strong> in the <strong>Profile</strong> list if you want to change the settings of your current project only. If you would like to change the defaults for the whole IDE, select <strong>Default</strong>.</li>
       <li>To find essential errors that stop our program from running, make sure the <strong>General</strong> group has both <strong>Java annotator</strong> and <strong>Syntax error</strong> inspections ticked.</li>
       <li>To find a typo in our code, make sure that <strong>Proofreading | Typo</strong> is ticked as well.</li>
       <li>Click <strong>Apply</strong> and then <strong>OK</strong>.</li>
      </ol>
-     <p class="warning">You can find more information about inspection profile configurations in the <a href="https://www.jetbrains.com/help/idea/customizing-profiles.html">Configure profiles</a> section.</p>
+     <p class="warning">You can find more information about inspection profile configurations on the <a href="https://www.jetbrains.com/help/idea/customizing-profiles.html" target="_blank">Configure profiles</a> page.</p>
      <p>To start the inspection, click <strong>Analyze</strong>. The <strong>Problems</strong> window with a list of errors will be opened.</p>
      <video width="100%" height="auto" controls class="central">
       <source src="videos/video5.mp4" type="video/mp4">
@@ -216,10 +216,10 @@
   <div id="instruction">
     <h2 id="rerun">Rerun the inspection and run the program</h2>
     <p>After the edits, some errors in the list are marked as <strong>No longer valid</strong>. Still, we cannot be sure that our program runs smoothly. To check the errors before starting the program, rerun the inspection. To do that, click <strong>Rerun Inspection</strong> in the toolbar (<img src="images/screen12.PNG" alt="rerun inspection"> or <strong>Ctrl+F5</strong>).</p>
-    <p>For our edited code, the <strong>Code inspection did not find anything to report</strong> message will be displayed at the right bottom of a screen. It means we are good to run the program. To do that, click <strong>Run &lsquo;Main.java&rsquo;</strong> (<img src="images/run_main.PNG" alt="run icon"> or <strong>Shift+F10</strong>) on the main toolbar.
+    <p>For our edited code, the <strong>Code inspection did not find anything to report</strong> message will be displayed at the right bottom of a screen. It means we are good to run the program. To do that, click <strong>Run &lsquo;Main.java&rsquo;</strong> (<img src="images/run_main.PNG" alt="run icon"> or <strong>Shift+F10</strong>) on the main toolbar.</p>
     <br>
      <img src="images/run.png" alt="run the program" class="central" width="100%" height="auto">
-    <p class="warning">You can find more information about different ways of running applications in the <a href="https://www.jetbrains.com/help/idea/running-applications.html">Running</a> section.</p>
+    <p class="warning">You can find more information about different ways of running applications on the <a href="https://www.jetbrains.com/help/idea/running-applications.html" target="_blank">Running</a> page.</p>
     <p>Since we fixed the previous issues, the program will run smoothly with the output like this:</p>
     <div style="background: #F3F3F3; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
       <p>What&apos;s your name?</p>
